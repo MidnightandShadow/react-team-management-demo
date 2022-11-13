@@ -1,25 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+import {ListScreen} from "./ListScreen";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+/**
+ * Returns the List screen with the given list of Team Members. The List screen serves as the
+ * default "home screen".
+ *
+ * @param props the list of Team Members
+ * @returns {JSX.Element} the List screen
+ */
+export function App(props) {
+
+    return (
+        <ListScreen membersList={props.membersList}/>
+    );
 }
 
-export default App;

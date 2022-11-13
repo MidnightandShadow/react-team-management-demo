@@ -1,3 +1,22 @@
+# Hello!
+Below is the default README included with having made the React project in IntelliJ. It takes you
+through everything you need to know about running, building, and testing the project.
+
+For the short version: "npm start" runs the App in dev mode, "npm run build" builds it, and
+"npm test" runs all the .test.js files in "src/".
+
+NOTE: Although I am familiar with JS, this was my first time ever using React. Due to other
+responsibilities, I only had about half of a 3-day weekend to learn the basics of React and
+complete this project. As a result, I have yet to figure out how React testing works. Of course, I
+could test regular functions with Jest, but I only really wrote React functions/components, one
+custom React hook, and a class with no methods for this project.
+
+The notion of having only tested something manually, and not with any sort of automated unit or
+integrated testing, sends shivers down my spine: I'm a firm believer in test-driven development.
+But as relates to React.JS, I don't really know what that would look like yet, so it'll definitely
+be the next thing I learn regarding React.
+___
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

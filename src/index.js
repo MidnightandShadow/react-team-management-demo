@@ -1,13 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {BrowserRouter, Routes, Route} from "react-router-dom";
+import {App} from "./App";
+import {Add} from "./Add";
+import {Edit} from "./Edit";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+// This is where the empty array of Team Members is initialized (and then passed down into the
+// App/List, Add, and Edit)
+const membersList = [];
 root.render(
   <React.StrictMode>
-    <App />
+      <BrowserRouter>
+          <Routes>
+              <Route path="/" element={<App membersList = {membersList}/>} />
+              <Route path="/add" element={<Add membersList = {membersList}/>} />
+              <Route path="/edit/:id" element={<Edit membersList = {membersList}/>} />
+          </Routes>
+      </BrowserRouter>
   </React.StrictMode>
 );
 
